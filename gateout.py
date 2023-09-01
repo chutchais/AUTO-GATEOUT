@@ -12,9 +12,13 @@ LANE_ID = os.getenv('LANE_ID')
 SCREEN_ID = int(os.getenv('SCREEN_ID'))
 CAMERA_ID = int(os.getenv('CAMERA_ID'))
 
+# Added on Sep 1,2023 -- To show monitor screen
+SHOW_MONITOR = os.getenv('SHOW_MONITOR')
+
 camera_id = CAMERA_ID
 delay = 1
 window_name = 'Auto Gate-Out'
+monitor_name = 'Monitor'
 
 # get the size of the screen
 screen_id = SCREEN_ID
@@ -184,6 +188,11 @@ async def main():
 
         
         cv2.imshow(window_name, frame)
+
+        # Added on Sep 1,2023 -- To show monitor screen
+        if SHOW_MONITOR == 'yes' :
+            cv2.imshow(monitor_name, frame)
+
         # Found Image
         if found_qr:
             NUMBER_CAPTURE+=1

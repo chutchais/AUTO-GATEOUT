@@ -3,3 +3,4 @@ screeninfo
 asyncio
 requests
 python-dotenv
+playsound

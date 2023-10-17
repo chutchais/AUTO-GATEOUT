@@ -1,1 +1,1 @@
-start cmd /k "D:\AutoGate\env\Scripts\Activate & python gateout.py"
+start cmd /k "D:\AutoGate\env\Scripts\Activate & python gateout2.py"

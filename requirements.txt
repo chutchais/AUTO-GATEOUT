@@ -4,3 +4,5 @@ asyncio
 requests
 python-dotenv
 playsound
+# Add on Oct 16,2023 -- To improve QRcode reader
+qreader
